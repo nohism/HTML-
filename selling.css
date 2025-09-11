@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+.navbar{
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-center ul{
+    display: flex;
+    gap: 40px;
+}
+
+.ul li{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    
+}
+
+.ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar-left .dot{
+    color: orangered;
+    font-size: 30px;
+
+}
+
+.landpage{
+    background-image: url(landpage.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.landpage h1{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: rgb(69, 52, 1);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.landpage p{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    width: 30%;
+    padding: 20px 30px;
+    font-family: op;
+}
+.landpage button{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding: 35px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: Calibri, sans-serif;
+}
+.landpage button:hover{
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}.models {
+    padding: 80px 0;
+    margin-top: 0px;
+    background-color: #f9f9f9;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container {
+  column-count: 3;  /* 3 columns */
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.item {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 51, 51, 0.5); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  opacity: 20%;              /* hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.item:hover img {
+  transform: scale(1.1);   /* zoom-in effect */
+}
+
+.item:hover .overlay {
+  opacity: 1;              /* show overlay */
+}
